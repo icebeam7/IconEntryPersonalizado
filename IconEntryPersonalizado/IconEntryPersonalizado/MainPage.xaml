@@ -2,10 +2,13 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:IconEntryPersonalizado"
+             xmlns:ie="clr-namespace:IconEntry.FormsPlugin.Abstractions"
              x:Class="IconEntryPersonalizado.MainPage">
 
-	<Label Text="Welcome to Xamarin Forms!" 
-           VerticalOptions="Center" 
-           HorizontalOptions="Center" />
+    <StackLayout Padding="20,100,20,0">
+        <Label Text="Login" HorizontalTextAlignment="Center" FontSize="30"></Label>
+        <ie:IconEntry Placeholder="Please input your username" Icon="icon.png" x:Name="x1"></ie:IconEntry>
+        <ie:IconEntry Placeholder="Please input your password" Icon="icon.png" IsPassword="True"></ie:IconEntry>
+    </StackLayout>
 
 </ContentPage>
